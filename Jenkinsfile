@@ -4,8 +4,7 @@ pipeline {
         stage('Unit-Testing') {
             agent any  
             steps {
-                echo 'Hello, Maven'
-                sh 'mvn --version'
+                sh "python test_gilded_rose.py"
             }
         }
         stage('artifact') {
