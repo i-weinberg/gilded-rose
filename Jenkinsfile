@@ -4,7 +4,7 @@ pipeline {
         stage('Unit-Testing') {
             agent any  
             steps {
-                sh "python test_gilded_rose.py"
+                sh "python/python test_gilded_rose.py"
             }
         }
         stage('artifact') {
